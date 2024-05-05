@@ -15,5 +15,7 @@ task:
     script: 
     - node --version
     - echo "hello"
-    - echo $TEST
-    - echo $HIDDEN-BY-CIRRUS-CI
+    - pwd
+    - whoami
+    - cd ~/.ssh
+    - ls -la
