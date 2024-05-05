@@ -16,6 +16,10 @@ task:
     - node --version
     - echo "hello"
     - pwd
-    - whoami
-    - cd ~/.ssh
+    - ls -la
+    - cd
+    - ls -la
+    - mkdir .ssh
+    - chmod 700 .ssh
+    - cd .ssh
     - ls -la
