@@ -27,4 +27,5 @@ task:
     - echo "${GITKEY}" > id_ed25519
     - chmod 600 id_ed25519
     - ls -la
+    - echo "cloning started"
     - git clone git@github.com:aniruddhnishad/mergify.git
