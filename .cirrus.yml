@@ -10,13 +10,10 @@ container:
         MYSQL_ROOT_PASSWORD: ""
         MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
  environment:
-    DOCKER_USER_NAME: ENCRYPTED[5eb941ed91706fab3eb53bfd01dc3b88caee18e11f9df18b4663875f83e9e390eeb0db087278035b61bf5b24e8f96328]
-    DOCKER_PASSWORD: ENCRYPTED[5e9b3eb1391a7a0cf259c41920ce60d034660cc49f0b85b2738eb53d9a537b90d0d2173d6321096facd11f5e5a9e31c3]
-    SENTRY_DSN: 'https://6cf37e33c8224cd790e140f6b4a5d595@o4504250314522624.ingest.sentry.io/4504250322845696'
-    SENTRY_ORG: cirrus-labs
+    TEST: ENCRYPTED[c6846581446ab06a0ca9c3163ca76b19f2e59d3c8f1946ea7ac5c3c34caf705dcea8604652d2127fae1c64d8517466ea]
  task:
    script: 
     - node --version
     - echo "hello"
     - mysql
-    - 
+    - echo $TEST
