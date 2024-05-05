@@ -1,9 +1,9 @@
 container:
     - name: nodejs
-        image: node:latest
+    - image: node:latest
 additional_containers:
     - name: mysql
-        image: mysql:latest
+    - image: mysql:latest
             port: 3306
             cpu: 1.0
             memory: 512Mi
