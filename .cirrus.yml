@@ -1,6 +1,6 @@
 container:
-  image: node:latest
-  additional_containers:
+image: node:latest
+additional_containers:
     - name: mysql
       image: mysql:latest
       port: 3306
@@ -9,10 +9,10 @@ container:
       env:
         MYSQL_ROOT_PASSWORD: ""
         MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
- environment:
+  environment:
     TEST: ENCRYPTED[c6846581446ab06a0ca9c3163ca76b19f2e59d3c8f1946ea7ac5c3c34caf705dcea8604652d2127fae1c64d8517466ea]
- task:
-   script: 
+task:
+  script: 
     - node --version
     - echo "hello"
     - mysql
