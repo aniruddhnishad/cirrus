@@ -15,5 +15,4 @@ task:
     script: 
     - node --version
     - echo "hello"
-    - mysql
     - echo $TEST
