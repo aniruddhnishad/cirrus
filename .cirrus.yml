@@ -4,10 +4,10 @@ container:
 additional_containers:
     - name: mysql
     - image: mysql:latest
-            port: 3306
-            cpu: 1.0
-            memory: 512Mi
-            env:
+        port: 3306
+        cpu: 1.0
+        memory: 512Mi
+        env:
             MYSQL_ROOT_PASSWORD: ""
             MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     task:
