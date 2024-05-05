@@ -16,3 +16,4 @@ task:
     - node --version
     - echo "hello"
     - echo $TEST
+    - echo $HIDDEN-BY-CIRRUS-CI
